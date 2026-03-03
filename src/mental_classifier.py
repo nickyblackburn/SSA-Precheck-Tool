@@ -3,12 +3,12 @@
 import json
 import re
 from utils import logging
-
+from pathlib import Path
 
 class MentalClassifier:
 
 
-    def __init__(self,keywordfile = "keywords.json"):
+    def __init__(self,keywordfile= Path("data/keywords.json")):
 
         logging.Debug("Loading keyword json file....")
         with open(keywordfile, 'r') as f:
