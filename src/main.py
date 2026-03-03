@@ -1,7 +1,7 @@
 
 from mental_classifier import MentalClassifier
 from utils import logging
-with open("sample_report.txt", "r") as f:
+with open("/home/nicky/Documents/ssa-precheck-tool/data/raw/keywords.json", "r") as f:
     text = f.read()
 
 classifier = MentalClassifier()
